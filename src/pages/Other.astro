@@ -1,0 +1,129 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import CaseStudySecTitle from "../components/CaseStudySecTItle.astro";
+import CaseStudyImageSec from "../components/CaseStudyImageSec.astro";
+
+import { Image } from 'astro:assets';
+
+import OW1 from "../images/projectimages/Other/OW1.png";
+import OW2 from "../images/projectimages/Other/OW2.png";
+import B1 from "../images/projectimages/Other/B1.png";
+import B2 from "../images/projectimages/Other/B2.png";
+import OW3 from "../images/projectimages/Other/OW3.png";
+---
+
+<Layout title="Nathan Fellows Design: Other Work">
+    <Header></Header>
+    <main>
+        <div class="start-container">
+	        <div class="header-content">
+		        <h1 class="title">OTHER WORK</h1>
+		        <div class="subtitle-container"> <p>ASSORTED</p> <p>PROJECTS</p></div>
+		        <hr class="line">
+		        <p class="summary">Here is a collection of other smaller projects that I wanted to include.</p>
+	        </div>
+        </div>
+		<div class="container">
+	        <div class="content">
+                <Image class="replace" src={OW1} alt="Nathan Fellows logo"></Image>
+                <CaseStudyImageSec tag="1.1 Myth's and Monsters - Vector Illustrations" summary="Set of vector illustrations, depicting creatures from greek mythology."></CaseStudyImageSec>
+				<Image class="replace-tall" src={OW3} alt="Nathan Fellows logo"></Image>
+                <CaseStudyImageSec tag="2.1 The Hay Loft - Poster Design" summary="Illustrative poster design, taking inspiration from the natural landscapes of central Oregon. "></CaseStudyImageSec>
+				<Image class="replace-tall" src={B1} alt="Nathan Fellows logo"></Image>
+                <CaseStudyImageSec tag="3.1 Jacaranda Supper Club - Poster Design" summary="Poster design for a supper club event, featuring simple paper cut-out inspired vector illustrations."></CaseStudyImageSec>
+				<Image class="replace" src={B2} alt="Nathan Fellows logo"></Image>
+                <CaseStudyImageSec tag="3.2 Jacaranda Supper Club - Social Media Post" summary="Matching social media post."></CaseStudyImageSec>
+				<Image class="replace" src={OW2} alt="Nathan Fellows logo"></Image>
+                <CaseStudyImageSec tag="4.1 Table Top RPG - Logo Design" summary="Simple emblamatic logo mark, ispired by fantasy elements for a table top RPG project."></CaseStudyImageSec>
+	        </div>
+        </div>
+    </main>
+    <Footer></Footer>
+</Layout>
+<style>
+    main{
+        min-height: 900vh;
+        color: #1170ff; 
+    }
+    .start-container{
+		padding-top: 25vh;
+	}
+    .container{
+		padding-top: 1rem;
+	}
+	.header-content{
+		width: 38rem;
+		margin-left: auto;
+		margin-right: auto;
+	}
+    .content{
+        width: 60vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: auto;
+		margin-right: auto;
+    }
+	.subtitle-container{
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		font-size: 1.5rem;
+	}
+	.line{
+		border-style: none;
+		height: 1px;
+		background-color: #1170ff;
+	}
+	.title{
+		font-size: 5.5rem;
+		margin-bottom: 1rem;
+		text-align: center;
+	}
+    .sub-title{
+		font-size: 2.8rem;
+		margin-bottom: 2rem;
+		text-align: center;
+	}
+	.summary{
+		font-size: 2rem;
+		text-align: center;
+		font-weight: 300;
+		font-style: italic;
+        margin-bottom: 5rem;
+	}
+    .replace{
+        width: 60vw;
+        height: auto;
+    }
+	.replace-tall{
+        width: 40vw;
+        height: auto;
+		margin-left: auto;
+		margin-right: auto;
+    }
+    .image-subtext{
+        font-size: 1rem;
+        font-weight: 200;
+        text-align: center;
+        margin-top: 2rem;
+    }
+
+	    @media only screen and (max-width: 800px) {
+        .replace{
+        width: 90vw;
+        height: auto;
+        }
+        .content{
+        width: 90vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: auto;
+		margin-right: auto;
+        }
+    }
+    }
+</style>

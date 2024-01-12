@@ -1,0 +1,150 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import CaseStudySecTitle from "../components/CaseStudySecTItle.astro";
+import CaseStudyImageSec from "../components/CaseStudyImageSec.astro";
+
+import { Image } from 'astro:assets';
+
+import R1 from "../images/projectimages/Rise/R1.png";
+import R2 from "../images/projectimages/Rise/R2.png";
+import R3 from "../images/projectimages/Rise/R3.png";
+import R4 from "../images/projectimages/Rise/R4.png";
+import R5 from "../images/projectimages/Rise/R5.png";
+import R6 from "../images/projectimages/Rise/R6.png";
+import R7 from "../images/projectimages/Rise/R7.png";
+import R8 from "../images/projectimages/Rise/R8.png";
+import R9 from "../images/projectimages/Rise/R9.png";
+import R10 from "../images/projectimages/Rise/R10.png";
+import R11 from "../images/projectimages/Rise/R11.png";
+import R12 from "../images/projectimages/Rise/R12.png";
+import R13 from "../images/projectimages/Rise/R13.png";
+import R14 from "../images/projectimages/Rise/R14.png";
+import R15 from "../images/projectimages/Rise/R15.png";
+import R16 from "../images/projectimages/Rise/R16.png";
+import R17 from "../images/projectimages/Rise/R17.png";
+import R18 from "../images/projectimages/Rise/R18.png";
+import R19 from "../images/projectimages/Rise/R19.png";
+import R20 from "../images/projectimages/Rise/R20.png";
+import R21 from "../images/projectimages/Rise/R21.png";
+---
+
+<Layout title="Nathan Fellows Design: RISE">
+    <Header></Header>
+        <main>
+            <div class="start-container">
+                <div class="header-content">
+		            <h1 class="title">SOURDOUGH IN OREGON</h1>
+		            <div class="subtitle-container"> <p>LAYOUT DESIGNER</p> <p>PERSONAL PROJECT</p></div>
+		            <hr class="line">
+		            <p class="summary">RISE is an exploration of sourdough bread throughout Oregon. It showcases bakeries across the state and demonstrates the sourdough process. <br><br> This book includes sparse and airy layouts, as well as light imagery. All to invoke similar elements present within bread itself. </p>
+	            </div>
+            </div>
+            <div class="container">
+	        <div class="content">
+                <Image class="replace" src={R1} alt="Nathan Fellows logo"></Image>
+                <Image class="replace" src={R2} alt="Nathan Fellows logo"></Image>
+				<Image class="replace" src={R3} alt="Nathan Fellows logo"></Image>
+                <Image class="replace" src={R4} alt="Nathan Fellows logo"></Image>
+				<Image class="replace" src={R5} alt="Nathan Fellows logo"></Image>
+                <Image class="replace" src={R6} alt="Nathan Fellows logo"></Image>
+				<Image class="replace" src={R7} alt="Nathan Fellows logo"></Image>
+                <Image class="replace" src={R8} alt="Nathan Fellows logo"></Image>
+				<Image class="replace" src={R9} alt="Nathan Fellows logo"></Image>
+                <Image class="replace" src={R10} alt="Nathan Fellows logo"></Image>
+				<Image class="replace" src={R11} alt="Nathan Fellows logo"></Image>
+                <Image class="replace" src={R12} alt="Nathan Fellows logo"></Image>
+				 <Image class="replace" src={R13} alt="Nathan Fellows logo"></Image>
+                <Image class="replace" src={R14} alt="Nathan Fellows logo"></Image>
+				<Image class="replace" src={R15} alt="Nathan Fellows logo"></Image>
+                <Image class="replace" src={R16} alt="Nathan Fellows logo"></Image>
+				<Image class="replace" src={R17} alt="Nathan Fellows logo"></Image>
+                <Image class="replace" src={R18} alt="Nathan Fellows logo"></Image>
+				<Image class="replace" src={R19} alt="Nathan Fellows logo"></Image>
+                <Image class="replace" src={R20} alt="Nathan Fellows logo"></Image>
+				<Image class="replace" src={R21} alt="Nathan Fellows logo"></Image>                
+	        </div>
+        </div>
+        </main>
+    <Footer></Footer>
+</Layout>
+
+<style>
+    main{
+        min-height: 900vh;
+        color: #1170ff; 
+    }
+    .start-container{
+		padding-top: 25vh;
+	}
+    .container{
+		padding-top: 1rem;
+	}
+	.header-content{
+		width: 38rem;
+		margin-left: auto;
+		margin-right: auto;
+	}
+    .content{
+        width: 60vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: auto;
+		margin-right: auto;
+    }
+	.subtitle-container{
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		font-size: 1.4rem;
+	}
+	.line{
+		border-style: none;
+		height: 1px;
+		background-color: #1170ff;
+	}
+	.title{
+		font-size: 3rem;
+		margin-bottom: 1rem;
+		text-align: center;
+	}
+    .sub-title{
+		font-size: 2.8rem;
+		margin-bottom: 2rem;
+		text-align: center;
+	}
+	.summary{
+		font-size: 2rem;
+		text-align: center;
+		font-weight: 300;
+		font-style: italic;
+        margin-bottom: 5rem;
+	}
+    .replace{
+        width: 60vw;
+        height: auto;
+    }
+    .image-subtext{
+        font-size: 1rem;
+        font-weight: 200;
+        text-align: center;
+        margin-top: 2rem;
+    }
+	    @media only screen and (max-width: 800px) {
+        .replace{
+        width: 90vw;
+        height: auto;
+        }
+        .content{
+        width: 90vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: auto;
+		margin-right: auto;
+        }
+    }
+    }
+</style>

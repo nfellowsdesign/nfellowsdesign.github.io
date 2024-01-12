@@ -4,6 +4,8 @@ interface Props {
 }
 
 const { title } = Astro.props;
+
+import '@fontsource-variable/outfit';
 ---
 
 <!doctype html>
@@ -11,41 +13,37 @@ const { title } = Astro.props;
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="description" content="Astro description" />
-		<meta name="viewport" content="width=device-width" />
+		<meta name="viewport" content="width=device-width, initial-scale=0.5, minimum-scale=0.5, maximum-scale=0.5" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
 	</head>
 	<body>
-		<slot />
+		<slot/>
 	</body>
 </html>
 <style is:global>
 	:root {
-		--accent: 136, 58, 234;
-		--accent-light: 224, 204, 250;
-		--accent-dark: 49, 10, 101;
+		--accent: 20, 58, 234;
+		--accent-light: 80, 204, 255;
+		--accent-dark: #1170ff;
 		--accent-gradient: linear-gradient(
-			45deg,
+			60deg,
 			rgb(var(--accent)),
 			rgb(var(--accent-light)) 30%,
 			white 60%
 		);
+		--accent-gradient2: linear-gradient(
+			0deg,
+			#CFE2FF 5%,
+			#f5f5f5 40%
+		);
 	}
 	html {
-		font-family: system-ui, sans-serif;
-		background: #13151a;
-		background-size: 224px;
-	}
-	code {
-		font-family:
-			Menlo,
-			Monaco,
-			Lucida Console,
-			Liberation Mono,
-			DejaVu Sans Mono,
-			Bitstream Vera Sans Mono,
-			Courier New,
-			monospace;
+		font-family: 'Outfit Variable', sans-serif;
+		background: #1170FF;
+		background-image: var(--accent-gradient2);
+		background-size: 100%;
+		overflow-x: hidden;
 	}
 </style>

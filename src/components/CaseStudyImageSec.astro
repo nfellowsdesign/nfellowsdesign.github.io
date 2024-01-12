@@ -1,0 +1,30 @@
+---
+interface Props {
+	tag:string;
+	summary:string;
+}
+
+const { tag , summary } = Astro.props;
+---
+<div class="container">
+    <p class="image-subtext">{ tag }</p>
+</div>
+	<p class="summary"> { summary }</p>
+
+<style>
+    .image-subtext{
+        font-size: 1rem;
+        font-weight: 200;
+        text-align: center;
+        margin-top: 2rem;
+    }
+		.summary{
+		font-size: 2rem;
+		text-align: center;
+		font-weight: 300;
+		font-style: italic;
+        margin-bottom: 5rem;
+		margin-left: 5rem;
+		margin-right: 5rem;
+	}
+</style>

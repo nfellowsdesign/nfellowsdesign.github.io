@@ -1,0 +1,29 @@
+---
+import BackButton from '../components/BackButton.astro';
+import { Image } from 'astro:assets';
+
+import logo from '../images/logo.svg';
+
+---
+
+<div class="header">
+    <BackButton></BackButton>
+    <a href="/"><Image class="logo" src={logo} alt="Nathan Fellows logo" width={100}></Image></a>
+</div>
+<style>
+    .header {
+        position: fixed;
+        width: calc(99vw - 4rem);
+        padding: 2rem;
+
+        display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		height: 20vh;
+    }
+
+    .logo {
+ 
+    }
+
+</style>

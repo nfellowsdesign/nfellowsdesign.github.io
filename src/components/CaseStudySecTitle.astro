@@ -1,0 +1,30 @@
+---
+interface Props {
+	title: string;
+	summary:string;
+}
+
+const { title , summary } = Astro.props;
+---
+<div>
+    <h1 class="sub-title">{ title }</h1>
+    <p class="summary">{ summary }</p>
+</div>
+
+<style>
+    .sub-title{
+		font-size: 2.8rem;
+		margin-bottom: 2rem;
+		text-align: center;
+	}
+	.summary{
+		font-size: 2rem;
+		text-align: center;
+		font-weight: 300;
+		font-style: italic;
+        margin-bottom: 5rem;
+		margin-left: 5rem;
+		margin-right: 5rem;
+
+	}
+</style>

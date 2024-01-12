@@ -1,0 +1,53 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+---
+
+<Layout title="Nathan Fellows Design: Get in Touch">
+    <Header></Header>
+    <main>
+    <div class="start-container">
+        <div class="content">
+            <h1 class="text-gradient"> HI I'M NATHAN</h1>
+            <p class="text-gradient">I’m a multi-disciplinary designer based in San Diego, who aims to create engaging experiences no matter the medium. 
+                <br><br>
+               Growing up in Oregon left me with many rainy days stuck inside, where I spent my time either drawing, making movies, or building Legos.
+                Planting the seed for my love of all things creative. 
+                 <br><br>
+                I ultimately ended up cultivating that love through my time at Oregon State University, where I found design to be the perfect avenue to continue my creative journey. 
+            </p>
+        </div>
+    </div>
+    </main>
+    <Footer></Footer>
+</Layout>
+<style>
+    main{
+        color: #1170ff;
+        min-height: 99vh;
+    }
+    .start-container{
+		padding-top: 20vh;
+	}
+    .content{
+		width: 38rem;
+		margin-left: auto;
+		margin-right: auto;
+	}
+    h1 {
+        font-size: 2.5rem;
+        
+    }
+    p{
+        font-size: 1.4rem;
+        font-weight: 300;
+    }
+    .text-gradient {
+		background-image: var(--accent-gradient);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		background-size: 400%;
+		background-position: 0%;
+	}
+</style>
