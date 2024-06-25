@@ -5,17 +5,19 @@ import Footer from "../components/Footer.astro";
 ---
 
 <Layout title="Nathan Fellows Design: Get in Touch">
-    <Header></Header>
     <main>
+    <Header></Header>
     <div class="start-container">
         <div class="content">
-            <h1 class="text-gradient"> HI I'M NATHAN</h1>
-            <p class="text-gradient">I’m a multi-disciplinary designer based in San Diego, who aims to create engaging experiences no matter the medium. 
+            <h1> HI I'M NATHAN</h1>
+            <p>I’m a multi-disciplinary designer based in San Diego, who aims to create engaging experiences no matter the medium. 
                 <br><br>
-               Growing up in Oregon left me with many rainy days stuck inside, where I spent my time either drawing, making movies, or building Legos.
+                Growing up in Oregon left me with many rainy days stuck inside, where I spent my time either drawing, making movies, or building Legos.
                 Planting the seed for my love of all things creative. 
                  <br><br>
-                I ultimately ended up cultivating that love through my time at Oregon State University, where I found design to be the perfect avenue to continue my creative journey. 
+                I cultivated that love through my time at Oregon State University, where I found design to be the perfect avenue to continue my creative journey. 
+                <br><br>
+                Get in touch:<a class="email" href="mailto:nfellowsdesign@gmail.com"><p>nfellowsdesign@gmail.com</p></a>
             </p>
         </div>
     </div>
@@ -26,9 +28,11 @@ import Footer from "../components/Footer.astro";
     main{
         color: #1170ff;
         min-height: 99vh;
+        height: 125vh;
     }
     .start-container{
-		padding-top: 20vh;
+		padding-top: 8vh;
+        height: 85vh
 	}
     .content{
 		width: 38rem;
@@ -43,11 +47,4 @@ import Footer from "../components/Footer.astro";
         font-size: 1.4rem;
         font-weight: 300;
     }
-    .text-gradient {
-		background-image: var(--accent-gradient);
-		-webkit-background-clip: text;
-		-webkit-text-fill-color: transparent;
-		background-size: 400%;
-		background-position: 0%;
-	}
 </style>

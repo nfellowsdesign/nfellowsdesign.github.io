@@ -2,157 +2,193 @@
 import Layout from "../layouts/Layout.astro";
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
-import CaseStudySecTitle from "../components/CaseStudySecTitle.astro";
-import CaseStudyImageSec from "../components/CaseStudyImageSec.astro";
 
 import { Image } from 'astro:assets';
 
-import COB1 from "../images/projectimages/Cynthias/cob1.png";
-import COB2 from "../images/projectimages/Cynthias/cob2.png";
-import C2 from "../images/projectimages/Cynthias/C2.png";
-import COB3 from "../images/projectimages/Cynthias/cob3.png";
-import COB4 from "../images/projectimages/Cynthias/cob4.png";
-import COB5 from "../images/projectimages/Cynthias/LESSONS.jpg";
-
-import COB6 from "../images/projectimages/Cynthias/C1.jpg";
-
+import CYN1 from "../images/projectimages/Cynthias/CYN1.jpg"; 
+import CYN2 from "../images/projectimages/Cynthias/CYN2.png"; 
+import CYN3 from "../images/projectimages/Cynthias/CYN3.png"; 
+import CYN4 from "../images/projectimages/Cynthias/CYN4.png"; 
+import CYN5 from "../images/projectimages/Cynthias/CYN5.png"; 
+import CYN6 from "../images/projectimages/Cynthias/CYN6.png"; 
+import CYN7 from "../images/projectimages/Cynthias/CYN7.png"; 
+import CYN8 from "../images/projectimages/Cynthias/CYN8.png"; 
+import CYN9 from "../images/projectimages/Cynthias/CYN9.png"; 
+import CYN10 from "../images/projectimages/Cynthias/CYN10.png"; 
+import CYN11 from "../images/projectimages/Cynthias/CYN11.png"; 
+import CYN12 from "../images/projectimages/Cynthias/CYN12.png"; 
 
 
 ---
 
 <Layout title="Nathan Fellows Design: Cynthia's of Bend">
-    <Header></Header>
+
     <main>
-        <div class="start-container">
-	        <div class="header-content">
-		        <h1 class="title">A LOCAL CLASSIC</h1>
-		        <div class="subtitle-container"> <p>BRANDING DESIGNER</p> <p>CYNTHIA'S OF BEND</p></div>
-		        <hr class="line">
-		        <p class="summary">As more and more people turn to an online shopping experience, a multi-generational sewing machine shop aims to shine through as a cornerstone of their local community.</p>
-	        </div>
+        <Header></Header>
+        <div class="project-header">
+            <p class="title">CYNTHIA'S OF BEND BRAND IDENTITY</p>
+            <p class="type">BRAND DESIGN</p>
+            <p class="summary">As more and more people turn to an online shopping experience, a multi-generational sewing machine shop aims to shine through as a cornerstone of their local community.</p>
+        
         </div>
-        <div class="container">
-	        <div class="content">
-                <CaseStudySecTitle title="A MODERN APPROACH" summary="Going a new direction gives Cynthia’s of Bend an opportunity to adopt a more functional and representational brand identity. Building on their current appeal, while providing a more cohesive brand system."></CaseStudySecTitle>
-                <Image class="replace" src={COB1} alt="Nathan Fellows logo"></Image>
-                <CaseStudyImageSec tag="1.1 OLD LOGO MARK / NEW LOGO MARK" summary="Familiar visual and type elements are made into a new logo mark with an emblematic approach. Giving the mark more gravitas and further incorporating the brand’s history into it's identity."></CaseStudyImageSec>
-	        </div>
-        </div>
-        <div class="container">
-	        <div class="content">
-                <Image class="replace" src={COB2} alt="Nathan Fellows logo"></Image>
-                <CaseStudyImageSec tag="1.2 - LOGO MARK SET" summary="This flexible set of marks maintains a consistent shape language allowing for their usage to be cohesive regardless of application."></CaseStudyImageSec>
-                 <Image class="replace" src={C2} alt="Nathan Fellows logo"></Image>
-                <CaseStudyImageSec tag="1.3 - MACHINE TAG TYPE USAGE EXAMPLE" summary="Cynthia’s is equipped with a lightweight type system that focuses on versatility and uniformity. Limiting font usage to specific weight groupings of a singular font family, Poppins. "></CaseStudyImageSec>
-	        </div>
-        </div>
-        <div class="container">
-	        <div class="content">
-                <CaseStudySecTitle title="ROOTED IN THE COMMUNITY" summary="Elements of the Brand are drawn from Central Oregon's Beautiful landscape and the iconic imagery of sewing. "></CaseStudySecTitle>
-                <Image class="replace" src={COB3} alt="Nathan Fellows logo"></Image>
-                <CaseStudyImageSec tag="2.1 BRAND COLOR PALETTE" summary="Color palette built upon natural elements of Central Oregon, resulting in a set of calming earthtones. "></CaseStudyImageSec>
-	        </div>
-        </div>
-        <div class="container">
-	        <div class="content">
-                <Image class="replace" src={COB4} alt="Nathan Fellows logo"></Image>
-                <CaseStudyImageSec tag="2.2 OTHER BRAND ELEMENTS" summary="Other brand elements take inspiration from the sewing process, including layering, color blocking, and stitched thread motifs."></CaseStudyImageSec>
-	        </div>
-        </div>
-        <div class="container">
-	        <div class="content">
-                <Image class="replace" src={COB5} alt="Nathan Fellows logo"></Image>
-                <CaseStudyImageSec tag="2.3 VOICE" summary="Deliverables should maintain a clear, concise, and friendly tone throughout all copy. The goal of all communications should be to make the customer’s experience go as smoothly as possible."></CaseStudyImageSec>
-	        </div>
-        </div>
-        <div class="container">
-	        <div class="content">
-                <Image class="replace" src={COB6} alt="Nathan Fellows logo"></Image>
-                <CaseStudyImageSec tag="2.4 IMAGERY" summary="All imagery used should have a naturalistic feel opposed to the corporate imagery often used in the industry, matching the tone of the overall voice."></CaseStudyImageSec>
-	        </div>
-        </div>
+        <div class="project-grid">
+            <Image class="content test-1" src={CYN1} alt="SPREAD"></Image>
+            <Image class="content test-2" src={CYN2} alt="SPREAD"></Image>
+            <p class="sectionheader sh-1">01: LOGO SYSTEM <br><br> This flexible set of marks maintains a consistent shape language allowing for their usage to be cohesive regardless of application.</p>
+            <Image class="content test-3" src={CYN3} alt="SPREAD"></Image>
+            <Image class="content test-4" src={CYN4} alt="SPREAD"></Image>
+            <Image class="content test-5" src={CYN5} alt="SPREAD"></Image>
+            <Image class="content test-6" src={CYN6} alt="SPREAD"></Image>
+            <p class="sectionheader sh-2">02: COLOR AND TYPE GUIDELINES <br><br> Brand elements such as the color palette draw inspiration from Central Oregon's natural landscape rooting the identity in Oregon.</p>
+            <Image class="content test-7" src={CYN7} alt="SPREAD"></Image>
+            <Image class="content test-8" src={CYN8} alt="SPREAD"></Image>
+            <p class="sectionheader sh-3">03: PRINT EXAMPLES</p>
+            <Image class="content test-9" src={CYN9} alt="SPREAD"></Image>
+            <Image class="content test-10" src={CYN10} alt="SPREAD"></Image>
+            <p class="sectionheader sh-4">04: WEB EXAMPLES</p>
+            <Image class="content test-11" src={CYN11} alt="SPREAD"></Image>
+            <Image class="content test-12" src={CYN12} alt="SPREAD"></Image>
 
-
+        </div>
     </main>
     <Footer></Footer>
 </Layout>
-
-
 <style>
     main{
-        min-height: 900vh;
         color: #1170ff; 
     }
-    .start-container{
-		padding-top: 25vh;
-	}
-    .container{
-		padding-top: 1rem;
-	}
-	.header-content{
-		width: 38rem;
-		margin-left: auto;
-		margin-right: auto;
-	}
-    .content{
-        width: 60vw;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        margin-left: auto;
-		margin-right: auto;
+    .project-header{
+        margin-top: 5vh;
+        margin-left: 9vw;
+        margin-right: 9vw;
+        margin-bottom: 3rem;
     }
-	.subtitle-container{
-		display: flex;
-		flex-direction: row;
-		justify-content: space-between;
-		font-size: 1.5rem;
-	}
-	.line{
-		border-style: none;
-		height: 1px;
-		background-color: #1170ff;
-	}
-	.title{
-		font-size: 4.5rem;
-		margin-bottom: 1rem;
-		text-align: center;
-	}
-    .sub-title{
-		font-size: 2.8rem;
-		margin-bottom: 2rem;
-		text-align: center;
-	}
-	.summary{
-		font-size: 2rem;
-		text-align: center;
-		font-weight: 300;
-		font-style: italic;
-        margin-bottom: 5rem;
-	}
-    .replace{
-        width: 60vw;
-        height: auto;
+    .title{
+        font-size: 2.8rem;
+        font-weight: 400;
     }
-    .image-subtext{
-        font-size: 1rem;
+    .type{
+        font-size: 1.3rem;
         font-weight: 200;
-        text-align: center;
-        margin-top: 2rem;
+        margin-top: -2rem;
     }
-    @media only screen and (max-width: 800px) {
-        .replace{
-        width: 90vw;
+    .summary{
+        font-size: 1.3rem;
+        font-weight: 200;
+        max-width: 40vw;
+    }
+    .project-grid{
+        display: grid;
+        grid-template-columns: 40vw 40vw;
+        grid-template-rows: 40vw 10vw 40vw 40vw 12vw 40vw 5vw 40vw 5vw 40vw;
+        column-gap: 2vw;
+        row-gap: 2vw;
+        margin-left: 9vw;
+        margin-right: 9vw;
+        margin-bottom: 4vw;
+    }
+    .content{
+        width: 40vw;
         height: auto;
-        }
-        .content{
-        width: 90vw;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        margin-left: auto;
-		margin-right: auto;
-        }
     }
+    .sectionheader{
+        font-size: 1.3rem;
+        font-weight: 200;
+    }
+    .test-1{
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 1;
+        grid-row-end: 1;
+    }
+    .test-2{
+        grid-column-start: 2;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 1;
+    }
+    .sh-1{
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 2;
+        grid-row-end: 2;
+    }
+    .test-3{
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 3;
+        grid-row-end: 3;
+    }
+    .test-4{
+        grid-column-start: 2;
+        grid-column-end: 2;
+        grid-row-start: 3;
+        grid-row-end: 3;
+    }
+      .test-5{
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 4;
+        grid-row-end: 4;
+    }
+      .test-6{
+        grid-column-start: 2;
+        grid-column-end: 2;
+        grid-row-start: 4;
+        grid-row-end: 4;
+    }
+        .sh-2{
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 5;
+        grid-row-end: 5;
+    }
+        .test-7{
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 6;
+        grid-row-end: 6;
+    }
+      .test-8{
+        grid-column-start: 2;
+        grid-column-end: 2;
+        grid-row-start: 6;
+        grid-row-end: 6;
+    }
+        .sh-3{
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 7;
+        grid-row-end: 7;
+    }
+        .test-9{
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 8;
+        grid-row-end: 8;
+    }
+        .test-10{
+        grid-column-start: 2;
+        grid-column-end: 2;
+        grid-row-start: 8;
+        grid-row-end: 8;
+    }
+        .sh-4{
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 9;
+        grid-row-end: 9;
+    }
+        .test-11{
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 10;
+        grid-row-end: 10;
+    }
+        .test-12{
+        grid-column-start: 2;
+        grid-column-end: 2;
+        grid-row-start: 10;
+        grid-row-end: 10;
     }
 </style>

@@ -1,29 +1,55 @@
 ---
-import BackButton from '../components/BackButton.astro';
 import { Image } from 'astro:assets';
 
 import logo from '../images/logo.svg';
 
 ---
-
 <div class="header">
-    <BackButton></BackButton>
-    <a href="/"><Image class="logo" src={logo} alt="Nathan Fellows logo" width={100}></Image></a>
+    <a href="/"><Image class="logo" src={logo} alt="Nathan Fellows logo" width={115}></Image></a>
+    <div class="link-tree">
+        <a class="link" href="/"><p>PROJECTS</p></a>
+        <a class="link" href="/Contact"><p>ABOUT</p></a>
+    </div>
 </div>
 <style>
     .header {
-        position: fixed;
-        width: calc(99vw - 4rem);
-        padding: 2rem;
-
+        width: 100vw;
         display: flex;
 		flex-direction: row;
 		justify-content: space-between;
-		height: 20vh;
+		height: 15vh;
     }
-
-    .logo {
- 
+    .link-tree{
+        display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+        align-items: center;
+        justify-content: center;
+        width: 11rem;
+        margin-right: 2rem;
+        gap: 1rem;
     }
-
+    .link {
+        text-decoration: none;
+        color: #1170FF;
+        font-size: 1.2rem;
+        font-weight: 200;
+        opacity: 85%;
+        transition: opacity 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+        transition: font-weight 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+    }
+    .link:is(:hover, :focus-within) {
+        font-weight: 400;
+        opacity: 100%;
+    }
+    .logo{
+        margin-left: 2rem;
+        margin-top: 3.5vh;
+        opacity: 85%;
+        transition: opacity 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+    }
+    .logo:is(:hover, :focus-within) {
+        opacity: 100%;
+    }
+    
 </style>

@@ -4,145 +4,173 @@ import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
 
 import { Image } from 'astro:assets';
-
-import R1 from "../images/projectimages/Rise/R1.png";
-import R2 from "../images/projectimages/Rise/R2.png";
-import R3 from "../images/projectimages/Rise/R3.png";
-import R4 from "../images/projectimages/Rise/R4.png";
-import R5 from "../images/projectimages/Rise/R5.png";
-import R6 from "../images/projectimages/Rise/R6.png";
-import R7 from "../images/projectimages/Rise/R7.png";
-import R8 from "../images/projectimages/Rise/R8.png";
-import R9 from "../images/projectimages/Rise/R9.png";
-import R10 from "../images/projectimages/Rise/R10.png";
-import R11 from "../images/projectimages/Rise/R11.png";
-import R12 from "../images/projectimages/Rise/R12.png";
-import R13 from "../images/projectimages/Rise/R13.png";
-import R14 from "../images/projectimages/Rise/R14.png";
-import R15 from "../images/projectimages/Rise/R15.png";
-import R16 from "../images/projectimages/Rise/R16.png";
-import R17 from "../images/projectimages/Rise/R17.png";
-import R18 from "../images/projectimages/Rise/R18.png";
-import R19 from "../images/projectimages/Rise/R19.png";
-import R20 from "../images/projectimages/Rise/R20.png";
-import R21 from "../images/projectimages/Rise/R21.png";
+import RISE1 from "../images/projectimages/Rise/RISE1.jpg"; 
+import RISE2 from "../images/projectimages/Rise/RISE2.png"; 
+import RISE3 from "../images/projectimages/Rise/RISE3.png"; 
+import RISE4 from "../images/projectimages/Rise/RISE4.png"; 
+import RISE5 from "../images/projectimages/Rise/RISE5.png"; 
+import RISE6 from "../images/projectimages/Rise/RISE6.png"; 
+import RISE7 from "../images/projectimages/Rise/RISE7.png"; 
+import RP1 from "../images/projectimages/Rise/RP1.jpg"; 
+import RP2 from "../images/projectimages/Rise/RP2.jpg"; 
+import RP3 from "../images/projectimages/Rise/RP3.jpg"; 
+import RP4 from "../images/projectimages/Rise/RP4.jpg"; 
+import RP5 from "../images/projectimages/Rise/RP5.jpg"; 
 ---
 
 <Layout title="Nathan Fellows Design: RISE">
-    <Header></Header>
-        <main>
-            <div class="start-container">
-                <div class="header-content">
-		            <h1 class="title">SOURDOUGH IN OREGON</h1>
-		            <div class="subtitle-container"> <p>LAYOUT DESIGNER</p> <p>PERSONAL PROJECT</p></div>
-		            <hr class="line">
-		            <p class="summary">RISE is an exploration of sourdough bread throughout Oregon. It showcases bakeries across the state and demonstrates the sourdough process. <br><br> This book includes sparse and airy layouts, as well as light imagery. All to invoke similar elements present within bread itself. </p>
-	            </div>
-            </div>
-            <div class="container">
-	        <div class="content">
-                <Image class="replace" src={R1} alt="Nathan Fellows logo"></Image>
-                <Image class="replace" src={R2} alt="Nathan Fellows logo"></Image>
-				<Image class="replace" src={R3} alt="Nathan Fellows logo"></Image>
-                <Image class="replace" src={R4} alt="Nathan Fellows logo"></Image>
-				<Image class="replace" src={R5} alt="Nathan Fellows logo"></Image>
-                <Image class="replace" src={R6} alt="Nathan Fellows logo"></Image>
-				<Image class="replace" src={R7} alt="Nathan Fellows logo"></Image>
-                <Image class="replace" src={R8} alt="Nathan Fellows logo"></Image>
-				<Image class="replace" src={R9} alt="Nathan Fellows logo"></Image>
-                <Image class="replace" src={R10} alt="Nathan Fellows logo"></Image>
-				<Image class="replace" src={R11} alt="Nathan Fellows logo"></Image>
-                <Image class="replace" src={R12} alt="Nathan Fellows logo"></Image>
-				 <Image class="replace" src={R13} alt="Nathan Fellows logo"></Image>
-                <Image class="replace" src={R14} alt="Nathan Fellows logo"></Image>
-				<Image class="replace" src={R15} alt="Nathan Fellows logo"></Image>
-                <Image class="replace" src={R16} alt="Nathan Fellows logo"></Image>
-				<Image class="replace" src={R17} alt="Nathan Fellows logo"></Image>
-                <Image class="replace" src={R18} alt="Nathan Fellows logo"></Image>
-				<Image class="replace" src={R19} alt="Nathan Fellows logo"></Image>
-                <Image class="replace" src={R20} alt="Nathan Fellows logo"></Image>
-				<Image class="replace" src={R21} alt="Nathan Fellows logo"></Image>                
-	        </div>
+
+    <main>
+        <Header></Header>
+        <div class="project-header">
+            <p class="title">RISE: SOURDOUGH IN OREGON</p>
+            <p class="type">LAYOUT DESIGN</p>
+            <p class="summary">RISE is an exploration of sourdough bread throughout Oregon. It showcases bakeries across the state and demonstrates the sourdough process. This book includes sparse experimental layouts paired with bright and airy imagery. </p>
+        
         </div>
-        </main>
+        <div class="project-grid">
+            <Image class="content test-1" src={RISE1} alt="SPREAD"></Image>
+            <Image class="content test-2" src={RP2} alt="SPREAD"></Image>
+            <p class="sectionheader sh-1">01: FEATURED SPREADS</p>
+            <Image class="content test-3" src={RISE2} alt="SPREAD"></Image>
+            <Image class="content test-4" src={RISE3} alt="SPREAD"></Image>
+            <Image class="content test-5" src={RISE4} alt="SPREAD"></Image>
+            <Image class="content test-6" src={RISE5} alt="SPREAD"></Image>
+            <Image class="content test-7" src={RISE6} alt="SPREAD"></Image>
+            <Image class="content test-8" src={RISE7} alt="SPREAD"></Image>
+            <p class="sectionheader sh-2">02: PROJECT PHOTOGRAPHY</p>
+            <Image class="content test-9" src={RP1} alt="SPREAD"></Image>
+            <Image class="content test-10" src={RP5} alt="SPREAD"></Image>
+            <Image class="content test-11" src={RP3} alt="SPREAD"></Image>
+            <Image class="content test-12" src={RP4} alt="SPREAD"></Image>
+        </div>
+    </main>
     <Footer></Footer>
 </Layout>
-
 <style>
     main{
-        min-height: 900vh;
         color: #1170ff; 
     }
-    .start-container{
-		padding-top: 25vh;
-	}
-    .container{
-		padding-top: 1rem;
-	}
-	.header-content{
-		width: 38rem;
-		margin-left: auto;
-		margin-right: auto;
-	}
-    .content{
-        width: 60vw;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        margin-left: auto;
-		margin-right: auto;
+    .project-header{
+        margin-top: 5vh;
+        margin-left: 9vw;
+        margin-right: 9vw;
+        margin-bottom: 3rem;
     }
-	.subtitle-container{
-		display: flex;
-		flex-direction: row;
-		justify-content: space-between;
-		font-size: 1.4rem;
-	}
-	.line{
-		border-style: none;
-		height: 1px;
-		background-color: #1170ff;
-	}
-	.title{
-		font-size: 3rem;
-		margin-bottom: 1rem;
-		text-align: center;
-	}
-    .sub-title{
-		font-size: 2.8rem;
-		margin-bottom: 2rem;
-		text-align: center;
-	}
-	.summary{
-		font-size: 2rem;
-		text-align: center;
-		font-weight: 300;
-		font-style: italic;
-        margin-bottom: 5rem;
-	}
-    .replace{
-        width: 60vw;
-        height: auto;
+    .title{
+        font-size: 2.8rem;
+        font-weight: 400;
     }
-    .image-subtext{
-        font-size: 1rem;
+    .type{
+        font-size: 1.3rem;
         font-weight: 200;
-        text-align: center;
-        margin-top: 2rem;
+        margin-top: -2rem;
     }
-	    @media only screen and (max-width: 800px) {
-        .replace{
-        width: 90vw;
+    .summary{
+        font-size: 1.1rem;
+        font-weight: 200;
+        max-width: 40vw;
+    }
+    .project-grid{
+        display: grid;
+        grid-template-columns: 40vw 40vw;
+        grid-template-rows: 40vw 5vw 40vw 40vw 40vw 5vw 40vw 40vw;
+        column-gap: 2vw;
+        row-gap: 2vw;
+        margin-left: 9vw;
+        margin-right: 9vw;
+        margin-bottom: 4vw;
+    }
+    .content{
+        width: 40vw;
         height: auto;
-        }
-        .content{
-        width: 90vw;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        margin-left: auto;
-		margin-right: auto;
-        }
     }
+     .sectionheader{
+        font-size: 1.3rem;
+        font-weight: 200;
+    }
+    .test-1{
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 1;
+        grid-row-end: 1;
+    }
+    .test-2{
+        grid-column-start: 2;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 1;
+    }
+    .sh-1{
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 2;
+        grid-row-end: 2;
+    }
+    .test-3{
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 3;
+        grid-row-end: 3;
+    }
+    .test-4{
+        grid-column-start: 2;
+        grid-column-end: 2;
+        grid-row-start: 3;
+        grid-row-end: 3;
+    }
+    .test-5{
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 4;
+        grid-row-end: 4;
+    }
+    .test-6{
+        grid-column-start: 2;
+        grid-column-end: 2;
+        grid-row-start: 4;
+        grid-row-end: 4;
+    }
+    .test-7{
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 5;
+        grid-row-end: 5;
+    }
+    .test-8{
+        grid-column-start: 2;
+        grid-column-end: 2;
+        grid-row-start: 5;
+        grid-row-end: 5;
+    }
+    .sh-2{
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 6;
+        grid-row-end: 6;
+    }
+    .test-9{
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 7;
+        grid-row-end: 7;
+    }
+    .test-10{
+        grid-column-start: 2;
+        grid-column-end: 2;
+        grid-row-start: 7;
+        grid-row-end: 7;
+    }
+    .test-11{
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 8;
+        grid-row-end: 8;
+    }
+    .test-12{
+        grid-column-start: 2;
+        grid-column-end: 2;
+        grid-row-start: 8;
+        grid-row-end: 8;
     }
 </style>

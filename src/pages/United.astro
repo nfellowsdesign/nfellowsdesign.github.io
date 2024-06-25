@@ -2,153 +2,116 @@
 import Layout from "../layouts/Layout.astro";
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
-import CaseStudySecTitle from "../components/CaseStudySecTitle.astro";
-import CaseStudyImageSec from "../components/CaseStudyImageSec.astro";
 
 import { Image } from 'astro:assets';
 
-import UW1 from "../images/projectimages/Unitedway/UW1.png";
-import UW2 from "../images/projectimages/Unitedway/UW2.png";
-import UW3 from "../images/projectimages/Unitedway/UW3.png";
-import UW4 from "../images/projectimages/Unitedway/UW4.png";
-import UW5 from "../images/projectimages/Unitedway/UW5.png";
-import UW6 from "../images/projectimages/Unitedway/UW6.png";
-import UW7 from "../images/projectimages/Unitedway/UW7.png";
+import UNITED1 from "../images/projectimages/Unitedway/UNITED1.jpg"; 
+import UNITED2 from "../images/projectimages/Unitedway/UNITED2.jpg"; 
+import UNITED32 from "../images/projectimages/Unitedway/UNITED32.jpg"; 
+import UNITED42 from "../images/projectimages/Unitedway/UNITED42.jpg";
+import UNITED4 from "../images/projectimages/Unitedway/UNITED4.png"; 
+import UNITED5 from "../images/projectimages/Unitedway/UNITED5.png"; 
+
 ---
 
 <Layout title="Nathan Fellows Design: United Way">
-    <Header></Header>
-        <main>
-            <div class="start-container">
-                <div class="header-content">
-		            <h1 class="title">CASCADES TO COAST</h1>
-		            <div class="subtitle-container"> <p>BRANDING / INFOGRAPHICS</p> <p>UNITED WAY</p></div>
-		            <hr class="line">
-		            <p class="summary">Working alongside United Way of Linn, Benton, & Lincoln Counties, our small team expanded on the existing United Way branding to elevate our local chapter.</p>
-	            </div>
-            </div>
-			<div class="container">
-	        	<div class="content">
-                	<CaseStudySecTitle title="BUILT FOR THE COMMUNITY" summary="The work United Way does is intrinsically linked with their community, we developed additional brand elements to serve that community while staying true to United Way's core branding guidelines."></CaseStudySecTitle>
-                	<Image class="replace" src={UW1} alt="Nathan Fellows logo"></Image>
-                	<CaseStudyImageSec tag="1.1 FRONT AND BACK COVERS - INVESTMENT BROCHURE" summary="The secondary color palette developed for use on all community facing deliverables, refrences natural elements specific to each county served."></CaseStudyImageSec>
-	       		</div>
-        	</div>
-			<div class="container">
-	        	<div class="content">
-                	<Image class="replace" src={UW2} alt="Nathan Fellows logo"></Image>
-                	<CaseStudyImageSec tag="1.2 MAIN SPREAD - INVESTMENT BROCURE" summary="Playful illustrations and community specific infographics allowed for easy and purposeful engament."></CaseStudyImageSec>
-	       		</div>
-        	</div>
-			<div class="container">
-	        	<div class="content">
-                	<Image class="replace" src={UW3} alt="Nathan Fellows logo"></Image>
-                	<CaseStudyImageSec tag="2.1 DONATION SHEET" summary="Straight forward layouts paired with the developed assets maintains a cohesive visual language no matter the use case."></CaseStudyImageSec>
-	       		</div>	   
-        	</div>
-			<div class="container">
-	        	<div class="content">
-                	<Image class="replace" src={UW4} alt="Nathan Fellows logo"></Image>
-                	<CaseStudyImageSec tag="3.1 BRAND STANDARDS & GUIDELINES" summary=""></CaseStudyImageSec>
-	       		</div>
-        	</div>
-			<div class="container">
-	        	<div class="content">
-                	<Image class="replace" src={UW5} alt="Nathan Fellows logo"></Image>
-                	<CaseStudyImageSec tag="3.2 BRAND STANDARDS & GUIDELINES CONT." summary=""></CaseStudyImageSec>
-	       		</div>
-        	</div>
-			<div class="container">
-	        	<div class="content">
-                	<Image class="replace" src={UW6} alt="Nathan Fellows logo"></Image>
-                	<CaseStudyImageSec tag="3.3 BRAND STANDARDS & GUIDELINES CONT." summary=""></CaseStudyImageSec>
-	       		</div>
-        	</div>
-			<div class="container">
-	        	<div class="content">
-                	<Image class="replace" src={UW7} alt="Nathan Fellows logo"></Image>
-                	<CaseStudyImageSec tag="3.4 BRAND STANDARDS & GUIDELINES CONT." summary=""></CaseStudyImageSec>
-	       		</div>
-        	</div>
-        </main>
+
+    <main>
+        <Header></Header>
+        <div class="project-header">
+            <p class="title">CASCADES TO COAST</p>
+            <p class="type">BRAND DESIGN / INFOGRAPHICS</p>
+            <p class="summary">Working alongside United Way of Linn, Benton, & Lincoln Counties, our small team expanded on the existing United Way branding to elevate our local chapter.</p>
+        
+        </div>
+        <div class="project-grid">
+            <Image class="content test-1" src={UNITED1} alt="SPREAD"></Image>
+            <Image class="content test-2" src={UNITED2} alt="SPREAD"></Image>
+            <Image class="content test-3" src={UNITED32} alt="SPREAD"></Image>
+            <Image class="content test-4" src={UNITED42} alt="SPREAD"></Image>
+            <Image class="content test-5" src={UNITED5} alt="SPREAD"></Image>
+            <Image class="content test-6" src={UNITED4} alt="SPREAD"></Image>
+        </div>
+    </main>
     <Footer></Footer>
 </Layout>
 <style>
     main{
-        min-height: 900vh;
         color: #1170ff; 
     }
-    .start-container{
-		padding-top: 25vh;
-	}
-    .container{
-		padding-top: 1rem;
-	}
-	.header-content{
-		width: 38rem;
-		margin-left: auto;
-		margin-right: auto;
-	}
-    .content{
-        width: 60vw;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        margin-left: auto;
-		margin-right: auto;
+    .project-header{
+        margin-top: 5vh;
+        margin-left: 9vw;
+        margin-right: 9vw;
+        margin-bottom: 3rem;
     }
-	.subtitle-container{
-		display: flex;
-		flex-direction: row;
-		justify-content: space-between;
-		font-size: 1.5rem;
-	}
-	.line{
-		border-style: none;
-		height: 1px;
-		background-color: #1170ff;
-	}
-	.title{
-		font-size: 3.6rem;
-		margin-bottom: 1rem;
-		text-align: center;
-	}
-    .sub-title{
-		font-size: 2.8rem;
-		margin-bottom: 2rem;
-		text-align: center;
-	}
-	.summary{
-		font-size: 2rem;
-		text-align: center;
-		font-weight: 300;
-		font-style: italic;
-        margin-bottom: 5rem;
-	}
-    .replace{
-        width: 60vw;
-        height: auto;
+    .title{
+        font-size: 2.8rem;
+        font-weight: 400;
     }
-    .image-subtext{
-        font-size: 1rem;
+    .type{
+        font-size: 1.3rem;
         font-weight: 200;
-        text-align: center;
-        margin-top: 2rem;
+        margin-top: -2rem;
     }
-
-	    @media only screen and (max-width: 800px) {
-        .replace{
-        width: 90vw;
+    .summary{
+        font-size: 1.1rem;
+        font-weight: 200;
+        max-width: 40vw;
+    }
+    .project-grid{
+        display: grid;
+        grid-template-columns: 40vw 40vw;
+        grid-template-rows: 40vw 40vw 40vw;
+        column-gap: 2vw;
+        row-gap: 2vw;
+        margin-left: 9vw;
+        margin-right: 9vw;
+        margin-bottom: 4vw;
+    }
+    .content{
+        width: 40vw;
         height: auto;
-        }
-        .content{
-        width: 90vw;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        margin-left: auto;
-		margin-right: auto;
-        }
     }
+    .sectionheader{
+        font-size: 1.3rem;
+        font-weight: 200;
+    }
+    .test-1{
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 1;
+        grid-row-end: 1;
+    }
+    .test-2{
+        grid-column-start: 2;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 1;
+    }
+    .test-3{
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 2;
+        grid-row-end: 2;
+    }
+    .test-4{
+        grid-column-start: 2;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 2;
+    }
+    .test-5{
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 3;
+        grid-row-end: 3;
+    }
+        }
+    .test-6{
+        grid-column-start: 2;
+        grid-column-end: 2;
+        grid-row-start: 3;
+        grid-row-end: 3;
     }
 </style>

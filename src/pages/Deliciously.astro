@@ -2,57 +2,38 @@
 import Layout from "../layouts/Layout.astro";
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
-import CaseStudyImageSec from "../components/CaseStudyImageSec.astro";
 
 import { Image } from 'astro:assets';
 
-import D1 from "../images/projectimages/Deliciously/D1.png";
-import D2 from "../images/projectimages/Deliciously/D2.png";
-import D3 from "../images/projectimages/Deliciously/D3.png";
-import D4 from "../images/projectimages/Deliciously/D4.png";
-import D5 from "../images/projectimages/Deliciously/D5.png";
+import DEL2 from "../images/projectimages/deliciously/DEL2.png";
+import DEL3 from "../images/projectimages/deliciously/DEL3.png";
+import DEL4 from "../images/projectimages/deliciously/DEL4.png";
+import DEL5 from "../images/projectimages/deliciously/DEL5.png";
+import DEL6 from "../images/projectimages/deliciously/DEL6.png";
+import DEL7 from "../images/projectimages/deliciously/DEL7.png";
+
 ---
 
 <Layout title="Nathan Fellows Design: Deliciously">
-    <Header></Header>
+
     <main>
-        <div class="start-container">
-	        <div class="header-content">
-		        <h1 class="title">FROM THE GROUND UP</h1>
-		        <div class="subtitle-container"> <p>BRANDING / UX DESIGNER</p> <p>DELICIOUSLY</p></div>
-		        <hr class="line">
-		        <p class="summary">Deliciously is a recipe app start-up, built for both IOS and Android. Deliciously takes advantage of modern technologies to provide the best experience for both users and content creators.</p>
-	        </div>
+        <Header></Header>
+        <div class="project-header">
+            <p class="title">FROM THE GROUND UP</p>
+            <p class="type">BRAND DESIGN / UX DESIGN</p>
+            <p class="summary">Deliciously is a recipe app start-up, built for both IOS and Android. Deliciously takes advantage of modern technologies to provide the best experience for both users and content creators.</p>
+        
         </div>
-        <div class="container">
-	        <div class="content">
-                <Image class="replace" src={D1} alt="Nathan Fellows logo"></Image>
-                <CaseStudyImageSec tag="1.1 LOGO MARK" summary="The Deliciously logo mark incorporates multiple visual elements into a simplified mark."></CaseStudyImageSec>
-	        </div>
-        </div>
-        <div class="container">
-	        <div class="content">
-                <Image class="replace" src={D2} alt="Nathan Fellows logo"></Image>
-                <CaseStudyImageSec tag="1.2 SET OF MARKS" summary=""></CaseStudyImageSec>
-	        </div>
-        </div>
-        <div class="container">
-	        <div class="content">
-                <Image class="replace" src={D3} alt="Nathan Fellows logo"></Image>
-                <CaseStudyImageSec tag="2.1 MAIN PAGES SCREENS" summary="Designed with daily use in mind. Page layouts include simple shape and color choices leading to a quick and intuitive usage."></CaseStudyImageSec>
-	        </div>
-        </div>
-        <div class="container">
-	        <div class="content">
-                <Image class="replace" src={D4} alt="Nathan Fellows logo"></Image>
-                <CaseStudyImageSec tag="2.2 SHOPPING LIST FLOW SCREENS" summary=""></CaseStudyImageSec>
-	        </div>
-        </div>
-        <div class="container">
-	        <div class="content">
-                <Image class="replace" src={D5} alt="Nathan Fellows logo"></Image>
-                <CaseStudyImageSec tag="3.1 BRANDING ILLUSTRATIONS" summary="Small illustrations used as additional branding elements, which incorporate a singular style and brand colors."></CaseStudyImageSec>
-	        </div>
+        <div class="project-grid">
+            <p class="sectionheader sh-1">01: FEATURED SCREENS <br><br> Designed for daily use. Layouts include simple shape and color choices for intuitive usage. </p>
+            <Image class="content test-1" src={DEL4} alt="SPREAD"></Image>
+            <Image class="content test-2" src={DEL5} alt="SPREAD"></Image>
+            <p class="sectionheader sh-2">02: LOGO MARK AND SECONDARY MARKS</p>
+            <Image class="content test-3" src={DEL2} alt="SPREAD"></Image>
+            <Image class="content test-4" src={DEL3} alt="SPREAD"></Image>
+            <p class="sectionheader sh-3">03: BRANDING ILLUSTRATIONS</p>
+            <Image class="content test-5" src={DEL6} alt="SPREAD"></Image>
+            <Image class="content test-6" src={DEL7} alt="SPREAD"></Image>
         </div>
     </main>
     <Footer></Footer>
@@ -61,76 +42,96 @@ import D5 from "../images/projectimages/Deliciously/D5.png";
     main{
         color: #1170ff; 
     }
-    .start-container{
-		padding-top: 25vh;
-	}
-    .container{
-		padding-top: 1rem;
-	}
-	.header-content{
-		width: 38rem;
-		margin-left: auto;
-		margin-right: auto;
-	}
-    .content{
-        width: 60vw;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        margin-left: auto;
-		margin-right: auto;
+    .project-header{
+        margin-top: 5vh;
+        margin-left: 9vw;
+        margin-right: 9vw;
+        margin-bottom: 3rem;
     }
-	.subtitle-container{
-		display: flex;
-		flex-direction: row;
-		justify-content: space-between;
-		font-size: 1.5rem;
-	}
-	.line{
-		border-style: none;
-		height: 1px;
-		background-color: #1170ff;
-	}
-	.title{
-		font-size: 3.4rem;
-		margin-bottom: 1rem;
-		text-align: center;
-	}
-    .sub-title{
-		font-size: 2.8rem;
-		margin-bottom: 2rem;
-		text-align: center;
-	}
-	.summary{
-		font-size: 2rem;
-		text-align: center;
-		font-weight: 300;
-		font-style: italic;
-        margin-bottom: 5rem;
-	}
-    .replace{
-        width: 60vw;
-        height: auto;
+    .title{
+        font-size: 2.8rem;
+        font-weight: 400;
     }
-    .image-subtext{
-        font-size: 1rem;
+    .type{
+        font-size: 1.3rem;
         font-weight: 200;
-        text-align: center;
-        margin-top: 2rem;
+        margin-top: -2rem;
     }
-    @media only screen and (max-width: 800px) {
-        .replace{
-        width: 90vw;
+    .summary{
+        font-size: 1.1rem;
+        font-weight: 200;
+        max-width: 40vw;
+    }
+    .project-grid{
+        display: grid;
+        grid-template-columns: 40vw 40vw;
+        grid-template-rows: 5vw 40vw 5vw 40vw 5vw 40vw;
+        column-gap: 2vw;
+        row-gap: 2vw;
+        margin-left: 9vw;
+        margin-right: 9vw;
+        margin-bottom: 4vw;
+    }
+    .content{
+        width: 40vw;
         height: auto;
-        }
-        .content{
-        width: 90vw;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        margin-left: auto;
-		margin-right: auto;
-        }
     }
+    .sectionheader{
+        font-size: 1.3rem;
+        font-weight: 200;
+    }
+    .sh-1{
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 1;
+        grid-row-end: 1;
+    }
+    .test-1{
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 2;
+        grid-row-end: 2;
+    }
+    .test-2{
+        grid-column-start: 2;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 2;
+    }
+    .sh-2{
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 3;
+        grid-row-end: 3;
+    }
+    .test-3{
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 4;
+        grid-row-end: 4;
+    }
+    .test-4{
+        grid-column-start: 2;
+        grid-column-end: 2;
+        grid-row-start: 4;
+        grid-row-end: 4;
+    }
+    .sh-3{
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 5;
+        grid-row-end: 5;
+    }
+    .test-5{
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 6;
+        grid-row-end: 6;
+    }
+    .test-6{
+        grid-column-start: 2;
+        grid-column-end: 2;
+        grid-row-start: 6;
+        grid-row-end: 6;
     }
 </style>

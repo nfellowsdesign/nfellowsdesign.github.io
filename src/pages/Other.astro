@@ -2,128 +2,186 @@
 import Layout from "../layouts/Layout.astro";
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
-import CaseStudySecTitle from "../components/CaseStudySecTitle.astro";
-import CaseStudyImageSec from "../components/CaseStudyImageSec.astro";
 
 import { Image } from 'astro:assets';
 
-import OW1 from "../images/projectimages/Other/OW1.png";
-import OW2 from "../images/projectimages/Other/OW2.png";
-import B1 from "../images/projectimages/Other/B1.png";
-import B2 from "../images/projectimages/Other/B2.png";
-import OW3 from "../images/projectimages/Other/OW3.png";
+import Other1 from "../images/projectimages/Other/Other1.jpg";
+import Other2 from "../images/projectimages/Other/Other2.jpg";
+import OTHSH from "../images/projectimages/Other/SH2.jpg";
+import OTHSS from "../images/projectimages/Other/SS2.jpg";
+import OTHAE from "../images/projectimages/Other/AE.jpg";
+import MM1 from "../images/projectimages/Other/MM1.png";
+import MM2 from "../images/projectimages/Other/MM2.png";
+import MM3 from "../images/projectimages/Other/MM3.png";
+import MM4 from "../images/projectimages/Other/MM4.png";
+import MM5 from "../images/projectimages/Other/MM5.png";
+import MM6 from "../images/projectimages/Other/MM6.png";
+import MM7 from "../images/projectimages/Other/MM7.png";
+
+
 ---
 
 <Layout title="Nathan Fellows Design: Other Work">
-    <Header></Header>
+
     <main>
-        <div class="start-container">
-	        <div class="header-content">
-		        <h1 class="title">OTHER WORK</h1>
-		        <div class="subtitle-container"> <p>ASSORTED</p> <p>PROJECTS</p></div>
-		        <hr class="line">
-		        <p class="summary">Here is a collection of other smaller projects that I wanted to include.</p>
-	        </div>
+        <Header></Header>
+        <div class="project-header">
+            <p class="title">OTHER WORK</p>
+            <p class="type">LOGO DESIGN / LAYOUT DESIGN / ILLUSTRATION</p>
+            <p class="summary">Here is a collection of other projects that I wanted to include.</p>
+        
         </div>
-		<div class="container">
-	        <div class="content">
-                <Image class="replace" src={OW1} alt="Nathan Fellows logo"></Image>
-                <CaseStudyImageSec tag="1.1 Myth's and Monsters - Vector Illustrations" summary="Set of vector illustrations, depicting creatures from greek mythology."></CaseStudyImageSec>
-				<Image class="replace-tall" src={OW3} alt="Nathan Fellows logo"></Image>
-                <CaseStudyImageSec tag="2.1 The Hay Loft - Poster Design" summary="Illustrative poster design, taking inspiration from the natural landscapes of central Oregon. "></CaseStudyImageSec>
-				<Image class="replace-tall" src={B1} alt="Nathan Fellows logo"></Image>
-                <CaseStudyImageSec tag="3.1 Jacaranda Supper Club - Poster Design" summary="Poster design for a supper club event, featuring simple paper cut-out inspired vector illustrations."></CaseStudyImageSec>
-				<Image class="replace" src={B2} alt="Nathan Fellows logo"></Image>
-                <CaseStudyImageSec tag="3.2 Jacaranda Supper Club - Social Media Post" summary="Matching social media post."></CaseStudyImageSec>
-				<Image class="replace" src={OW2} alt="Nathan Fellows logo"></Image>
-                <CaseStudyImageSec tag="4.1 Table Top RPG - Logo Design" summary="Simple emblamatic logo mark, ispired by fantasy elements for a table top RPG project."></CaseStudyImageSec>
-	        </div>
+        <div class="project-grid">
+            <p class="sectionheader sh-1">01: POSTERS</p>
+            <Image class="content test-1" src={Other1} alt="SPREAD"></Image>
+            <Image class="content test-2" src={Other2} alt="SPREAD"></Image>
+            <p class="sectionheader sh-2">02: PLAYER LAYOUTS</p>
+            <Image class="content test-3" src={OTHSH} alt="SPREAD"></Image>
+            <Image class="content test-4" src={OTHSS} alt="SPREAD"></Image>
+            <Image class="content test-5" src={OTHAE} alt="SPREAD"></Image>
+            <p class="sectionheader sh-3">03: MYTHS & MONSTERS ILLUSTRATIONS</p>
+            <Image class="content test-6" src={MM1} alt="SPREAD"></Image>
+            <Image class="content test-7" src={MM2} alt="SPREAD"></Image>
+            <Image class="content test-8" src={MM3} alt="SPREAD"></Image>
+            <Image class="content test-9" src={MM4} alt="SPREAD"></Image>
+            <Image class="content test-10" src={MM5} alt="SPREAD"></Image>
+            <Image class="content test-11" src={MM6} alt="SPREAD"></Image>
+            <Image class="content test-12" src={MM7} alt="SPREAD"></Image>
+
         </div>
     </main>
     <Footer></Footer>
 </Layout>
 <style>
     main{
-        min-height: 900vh;
         color: #1170ff; 
     }
-    .start-container{
-		padding-top: 25vh;
-	}
-    .container{
-		padding-top: 1rem;
-	}
-	.header-content{
-		width: 38rem;
-		margin-left: auto;
-		margin-right: auto;
-	}
-    .content{
-        width: 60vw;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        margin-left: auto;
-		margin-right: auto;
+    .project-header{
+        margin-top: 5vh;
+        margin-left: 9vw;
+        margin-right: 9vw;
+        margin-bottom: 3rem;
     }
-	.subtitle-container{
-		display: flex;
-		flex-direction: row;
-		justify-content: space-between;
-		font-size: 1.5rem;
-	}
-	.line{
-		border-style: none;
-		height: 1px;
-		background-color: #1170ff;
-	}
-	.title{
-		font-size: 5.5rem;
-		margin-bottom: 1rem;
-		text-align: center;
-	}
-    .sub-title{
-		font-size: 2.8rem;
-		margin-bottom: 2rem;
-		text-align: center;
-	}
-	.summary{
-		font-size: 2rem;
-		text-align: center;
-		font-weight: 300;
-		font-style: italic;
-        margin-bottom: 5rem;
-	}
-    .replace{
-        width: 60vw;
-        height: auto;
+    .title{
+        font-size: 2.8rem;
+        font-weight: 400;
     }
-	.replace-tall{
+    .type{
+        font-size: 1.3rem;
+        font-weight: 200;
+        margin-top: -2rem;
+    }
+    .summary{
+        font-size: 1.1rem;
+        font-weight: 200;
+        max-width: 40vw;
+    }
+    .project-grid{
+        display: grid;
+        grid-template-columns: 40vw 40vw;
+        grid-template-rows: 5vw 40vw 5vw 23vw 23vw 5vw 40vw 40vw 40vw 40vw;
+        column-gap: 2vw;
+        row-gap: 2vw;
+        margin-left: 9vw;
+        margin-right: 9vw;
+        margin-bottom: 4vw;
+    }
+     .content{
         width: 40vw;
         height: auto;
-		margin-left: auto;
-		margin-right: auto;
     }
-    .image-subtext{
-        font-size: 1rem;
+    .sectionheader{
+        font-size: 1.3rem;
         font-weight: 200;
-        text-align: center;
-        margin-top: 2rem;
     }
-
-	    @media only screen and (max-width: 800px) {
-        .replace{
-        width: 90vw;
-        height: auto;
-        }
-        .content{
-        width: 90vw;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        margin-left: auto;
-		margin-right: auto;
-        }
+    .sh-1{
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 1;
+        grid-row-end: 1;
     }
+    .test-1{
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 2;
+        grid-row-end: 2;
+    }
+    .test-2{
+        grid-column-start: 2;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 2;
+    }
+    .sh-2{
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 3;
+        grid-row-end: 3;
+    }
+    .test-3{
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 4;
+        grid-row-end: 4;
+    }
+    .test-4{
+        grid-column-start: 2;
+        grid-column-end: 2;
+        grid-row-start: 4;
+        grid-row-end: 4;
+    }
+    .test-5{
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 5;
+        grid-row-end: 5;
+    }
+    .sh-3{
+         grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 6;
+        grid-row-end: 6;
+    }
+    .test-6{
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 7;
+        grid-row-end: 7;
+    }
+    .test-7{
+        grid-column-start: 2;
+        grid-column-end: 2;
+        grid-row-start: 7;
+        grid-row-end: 7;
+    }
+    .test-8{
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 8;
+        grid-row-end: 8;
+    }
+    .test-9{
+        grid-column-start: 2;
+        grid-column-end: 2;
+        grid-row-start: 8;
+        grid-row-end: 8;
+    }
+    .test-10{
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 9;
+        grid-row-end: 9;
+    }
+    .test-11{
+        grid-column-start: 2;
+        grid-column-end: 2;
+        grid-row-start: 9;
+        grid-row-end: 9;
+    }
+    .test-12{
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 10;
+        grid-row-end: 10;
     }
 </style>
